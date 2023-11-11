@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	
 	//Declaration
-	@FindBy(xpath = "//h3[text()=\"Login\"]")
+	@FindBy(id = "loginClick")
 	private WebElement pageHeader;
 	
 	@FindBy(id ="email")
@@ -17,7 +17,7 @@ public class LoginPage {
 	@FindBy (name = "password")
 	private WebElement passwordTF;
 	
-	@FindBy (id="last")
+	@FindBy (xpath = "//button[text()=\"Login\"]")
 	private WebElement loginButton;
 	
 	//Initialization
@@ -44,6 +44,6 @@ public class LoginPage {
 	}
 	
 	public void clickLoin() {
-		loginButton.submit();
+		loginButton.click();
 	}
 }
