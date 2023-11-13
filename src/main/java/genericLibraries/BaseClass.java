@@ -22,6 +22,7 @@ public class BaseClass  {
 	//@BeforeSuite
 	//@BeforeTest
 	
+	//**********
 	protected PropertiesUtility property;
 	protected ExcelUtility excel;
 	protected JavaUtility jutil;
